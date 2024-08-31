@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.sclVolume = new System.Windows.Forms.HScrollBar();
             this.tmrOpacity = new System.Windows.Forms.Timer(this.components);
+            this.cmdConfig = new System.Windows.Forms.Button();
+            this.chkMute = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // sclVolume
@@ -49,11 +51,36 @@
             this.tmrOpacity.Tag = "1";
             this.tmrOpacity.Tick += new System.EventHandler(this.tmrOpacity_Tick);
             // 
+            // cmdConfig
+            // 
+            this.cmdConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdConfig.Location = new System.Drawing.Point(9, 35);
+            this.cmdConfig.Name = "cmdConfig";
+            this.cmdConfig.Size = new System.Drawing.Size(24, 24);
+            this.cmdConfig.TabIndex = 1;
+            this.cmdConfig.Text = "C";
+            this.cmdConfig.UseVisualStyleBackColor = true;
+            // 
+            // chkMute
+            // 
+            this.chkMute.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chkMute.AutoSize = true;
+            this.chkMute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkMute.Location = new System.Drawing.Point(39, 35);
+            this.chkMute.Name = "chkMute";
+            this.chkMute.Size = new System.Drawing.Size(26, 23);
+            this.chkMute.TabIndex = 2;
+            this.chkMute.Text = "M";
+            this.chkMute.UseVisualStyleBackColor = true;
+            this.chkMute.CheckedChanged += new System.EventHandler(this.chkMute_CheckedChanged);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(169, 68);
+            this.Controls.Add(this.chkMute);
+            this.Controls.Add(this.cmdConfig);
             this.Controls.Add(this.sclVolume);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
@@ -66,6 +93,7 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmMain_MouseDown);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -73,6 +101,8 @@
 
         private System.Windows.Forms.HScrollBar sclVolume;
         private System.Windows.Forms.Timer tmrOpacity;
+        private System.Windows.Forms.Button cmdConfig;
+        private System.Windows.Forms.CheckBox chkMute;
     }
 }
 

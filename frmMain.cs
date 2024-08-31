@@ -18,7 +18,7 @@ namespace RollOnVol
     public partial class frmMain : Form
     {
         public double chOp = 0.5;
-
+        public int lVol;
 
         CoreAudioDevice defRollOn = new CoreAudioController().DefaultPlaybackDevice;
 
@@ -84,6 +84,20 @@ namespace RollOnVol
                 tmrOpacity.Enabled = false;
             }
 
+        }
+
+        private void chkMute_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkMute.Checked == true)
+            {
+                lVol = (int)defRollOn.Volume;
+                defRollOn.Volume = 0;
+            } else
+            {
+                defRollOn.Volume = lVol;
+
+            }
+            
         }
     }
 }
