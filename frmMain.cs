@@ -99,5 +99,11 @@ namespace RollOnVol
             }
             
         }
+
+        private void cmdConfig_Click(object sender, EventArgs e)
+        {
+            Form fCfg = new frmConfig();
+            fCfg.Show();
+        }
     }
 }

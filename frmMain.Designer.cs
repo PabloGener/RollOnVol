@@ -60,6 +60,7 @@
             this.cmdConfig.TabIndex = 1;
             this.cmdConfig.Text = "C";
             this.cmdConfig.UseVisualStyleBackColor = true;
+            this.cmdConfig.Click += new System.EventHandler(this.cmdConfig_Click);
             // 
             // chkMute
             // 

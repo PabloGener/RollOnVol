@@ -1,0 +1,8 @@
+﻿ROLL ON VOLUME:
+v0.1 main
+features:
+- added scrollbar
+- change volume on scrollbar scroll
+- added timer
+- every scroll action sets timer on and changes opacity
+- saves and recovers form position between runs
