@@ -46,5 +46,29 @@ namespace RollOnVol.Properties {
                 this["lastY"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Control")]
+        public global::System.Drawing.Color Scrollbar_Color {
+            get {
+                return ((global::System.Drawing.Color)(this["Scrollbar_Color"]));
+            }
+            set {
+                this["Scrollbar_Color"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Control")]
+        public global::System.Drawing.Color Form_Color {
+            get {
+                return ((global::System.Drawing.Color)(this["Form_Color"]));
+            }
+            set {
+                this["Form_Color"] = value;
+            }
+        }
     }
 }

@@ -60,6 +60,10 @@ namespace RollOnVol
         {
             this.Left = Properties.Settings.Default.lastX;
             this.Top = Properties.Settings.Default.lastY;
+
+            this.BackColor = Properties.Settings.Default.Form_Color;
+            sclVolume.
+
             this.TopMost = false;
         }
 

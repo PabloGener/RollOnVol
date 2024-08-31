@@ -15,6 +15,9 @@ namespace RollOnVol
     {
         RegistryKey rk = Registry.CurrentUser.OpenSubKey
         ("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+
+        MouseButtons _lastButtonUp = MouseButtons.None;
+
         public frmConfig()
         {
             InitializeComponent();
@@ -41,5 +44,9 @@ namespace RollOnVol
                 chkStartup.Checked = false;
             }
         }
+
+        
+
+        
     }
 }

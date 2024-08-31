@@ -38,9 +38,9 @@
             // sclVolume
             // 
             this.sclVolume.LargeChange = 20;
-            this.sclVolume.Location = new System.Drawing.Point(9, 13);
+            this.sclVolume.Location = new System.Drawing.Point(9, 9);
             this.sclVolume.Name = "sclVolume";
-            this.sclVolume.Size = new System.Drawing.Size(151, 19);
+            this.sclVolume.Size = new System.Drawing.Size(180, 23);
             this.sclVolume.SmallChange = 5;
             this.sclVolume.TabIndex = 0;
             this.sclVolume.Scroll += new System.Windows.Forms.ScrollEventHandler(this.sclVolume_Scroll);
@@ -54,24 +54,23 @@
             // cmdConfig
             // 
             this.cmdConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdConfig.Location = new System.Drawing.Point(9, 35);
+            this.cmdConfig.Image = global::RollOnVol.Properties.Resources.tools_line;
+            this.cmdConfig.Location = new System.Drawing.Point(9, 44);
             this.cmdConfig.Name = "cmdConfig";
             this.cmdConfig.Size = new System.Drawing.Size(24, 24);
             this.cmdConfig.TabIndex = 1;
-            this.cmdConfig.Text = "C";
             this.cmdConfig.UseVisualStyleBackColor = true;
             this.cmdConfig.Click += new System.EventHandler(this.cmdConfig_Click);
             // 
             // chkMute
             // 
             this.chkMute.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkMute.AutoSize = true;
             this.chkMute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chkMute.Location = new System.Drawing.Point(39, 35);
+            this.chkMute.Image = global::RollOnVol.Properties.Resources.volume_mute_line;
+            this.chkMute.Location = new System.Drawing.Point(39, 44);
             this.chkMute.Name = "chkMute";
-            this.chkMute.Size = new System.Drawing.Size(26, 23);
+            this.chkMute.Size = new System.Drawing.Size(24, 23);
             this.chkMute.TabIndex = 2;
-            this.chkMute.Text = "M";
             this.chkMute.UseVisualStyleBackColor = true;
             this.chkMute.CheckedChanged += new System.EventHandler(this.chkMute_CheckedChanged);
             // 
@@ -79,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(169, 68);
+            this.ClientSize = new System.Drawing.Size(198, 80);
             this.Controls.Add(this.chkMute);
             this.Controls.Add(this.cmdConfig);
             this.Controls.Add(this.sclVolume);
@@ -94,7 +93,6 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmMain_MouseDown);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
